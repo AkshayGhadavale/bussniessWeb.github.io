@@ -1,0 +1,1775 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Work+Sans&display=swap');
+:root {
+    --card-color: #A6A6A6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    /* background-color: rgba(0, 0, 0, 0.9);
+    
+    z-index: -1;*/
+}
+
+.navbar {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+}
+
+.navleft {
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navleft h1 {
+    color: white;
+}
+
+.menuicon {
+    display: none;
+}
+
+.navright {
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+}
+
+.navlist li {
+    padding-left: 2vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.bgtextcontainer {
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bgtextcontainer .title {
+    color: white;
+    font-size: 3em;
+    width: 80%;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: 'Work Sans', sans-serif;
+    padding-bottom: 3vh;
+}
+
+.bgtextcontainer p {
+    color: white;
+    font-size: 1em;
+    width: 80%;
+    padding-bottom: 4vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bgtextcontainer button {
+    width: 180px;
+    height: 40px;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-left: 10rem;
+}
+
+.bgImagecontainer {
+    width: 50vw;
+    height: 80vh;
+}
+
+
+/* whiteboard start */
+
+.whiteboard {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.whiteboard .header {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard {
+    flex-wrap: wrap;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 20rem;
+    height: 14rem;
+    border-radius: 20px;
+    background-color: rgb(128, 128, 128, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.card h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.card p {
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card:hover {
+    background-color: rgb(128, 128, 128, 0.5);
+    transition: ease-in-out;
+    rotate: 10deg;
+    cursor: pointer;
+}
+
+
+/* 
+.middlebackground {
+    width: 100%;
+    height: 80vh;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    display: block;
+} */
+
+
+/* middle backkground start */
+
+.middlebackground {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(63, 17, 17, 0.1);
+}
+
+.middlebackground .imgcontain {
+    width: 40%;
+    height: 100%;
+}
+
+.middlebackground img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.middlecontent {
+    flex-wrap: wrap;
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.middlecontent h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.middlecontent p {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.middlecontent button {
+    width: 180px;
+    background-color: transparent;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.middlecontent button:hover {
+    border: 3px solid green;
+    color: green;
+}
+
+
+/* clinetborad */
+
+.clientboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+}
+
+.headerclient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.cardcontainer {
+    height: 80%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardcontainer .section1 {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+}
+
+.section1 .clientcard .para1 {
+    background-color: var(--card-color);
+    padding: 10px;
+    width: 80%;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* border-bottom-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    /* border: 2px solid black; */
+}
+
+.paragraphborder {
+    width: 100%;
+}
+
+.cardcontainer .section1 .clientcard {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    /* border: 1px solid red;
+    background-color: green; */
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/* 
+.cardcontainer .section1 .clientcard::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: red;
+    transform: rotate(130deg);
+} */
+
+.clientcard .profile {
+    margin-top: 0px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 70%;
+    align-self: flex-end;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.profile p {
+    width: 80%;
+    text-align: left;
+}
+
+.profile h2 {
+    font-size: 20px;
+    margin-right: 20px;
+    width: 80%;
+    text-align: right;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+}
+
+.profile .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 70%;
+    height: 100%;
+}
+
+
+/* sec2 */
+
+.cardcontainer .section2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+}
+
+.section2 .clientcard .para1 {
+    padding: 10px;
+    width: 80%;
+    text-align: left;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cardcontainer .section2 .clientcard {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    /* border: 1px solid red;
+    background-color: green; */
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/* card bootom tip */
+
+
+/* 
+.cardcontainer .section2 .sec1card::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--card-color);
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 60px;
+    transform: rotate(130deg);
+}
+
+.cardcontainer .section1 .sec1card2::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--card-color);
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 170px;
+    transform: rotate(130deg);
+}
+
+.cardcontainer .section2 .sec1card2::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--card-color);
+    position: absolute;
+    margin-top: 1.4%;
+    margin-left: 10%;
+    transform: rotate(130deg);
+}
+
+.cardcontainer .section1 .sec1card::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--card-color);
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 60px;
+    transform: rotate(130deg);
+} */
+
+
+/* skilldashboad */
+
+.skilldashboard {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/skillsbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    background-position: center;
+}
+
+.experience {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience .excontent {
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.excontent h1 {
+    font-size: 3em;
+    color: aliceblue;
+}
+
+.excontent p {
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+.excontent button {
+    width: 180px;
+    background-color: transparent;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.excontent button:hover {
+    border: 3px solid green;
+    color: green;
+}
+
+.skills {
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .skillcontent {
+    margin-top: 80px;
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.skillcontent .title {
+    width: 100%;
+    height: 20%;
+    color: white;
+}
+
+.skillsdata {
+    width: 100%;
+    height: 80%;
+}
+
+.skillbar {
+    width: 100%;
+    height: 20%;
+}
+
+.headdata {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-content: space-around;
+}
+
+.skillbar h2 {
+    color: aliceblue;
+    font-size: 15px;
+}
+
+.skillbar .bar {
+    background: grey;
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.bar::before {
+    content: "50%";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 76%;
+    color: white;
+}
+
+
+/* blogboard start */
+
+.blogboard {
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.blogheader {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.blogcardcontainer {
+    flex-direction: row;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bcard {
+    width: 30%;
+    height: 90%;
+}
+
+.bimg {
+    background-image: url(../images/altumcode-dMUt0X3f59Q-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+}
+
+.bcontent {
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+
+.bcontent h1 {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.bcontent .date {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.date h4 {
+    font-weight: 500;
+    color: rgb(5, 141, 5);
+    margin-left: 10px;
+}
+
+.bcontent p {
+    text-align: left;
+    width: 100%;
+}
+
+.greenbar {
+    background-color: green;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.greenbar .secf {
+    color: white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.greenbar .sec2 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2 button {
+    width: 180px;
+    background-color: transparent;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: gray;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.companyname {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.london {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newyork {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mardrid {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .progress {} */
+
+
+/* ******************************mobile*********************************************************** */
+
+@media only screen and (max-width: 640px) and (min-width: 360px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        /* border: 2px solid red; */
+    }
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.8;
+        /* background-color: rgba(0, 0, 0, 0.9);
+        
+        z-index: -1;*/
+    }
+    .navbar {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+    }
+    .navleft {
+        height: 100%;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navleft h1 {
+        color: white;
+    }
+    .menuicon {
+        display: block;
+        align-self: flex-start;
+    }
+    .menuicon img {
+        width: 60px;
+        height: 60px;
+        align-self: flex-start;
+        margin-right: 20px;
+    }
+    .navright {
+        height: 100%;
+        width: 30vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .navlist {
+        list-style: none;
+        display: none;
+    }
+    .navlist li {
+        padding-left: 2vw;
+        text-transform: uppercase;
+        color: white;
+    }
+    .container {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+    }
+    .bgtextcontainer {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bgtextcontainer .title {
+        color: white;
+        font-size: 3em;
+        width: 80%;
+        text-align: center;
+        padding-bottom: 3vh;
+    }
+    .bgtextcontainer p {
+        color: white;
+        font-size: 1em;
+        width: 80%;
+        text-align: center;
+        padding-bottom: 4vh;
+    }
+    .bgtextcontainer button {
+        width: 180px;
+        height: 40px;
+        background-color: green;
+        border-radius: 10px;
+        color: white;
+        align-self: center;
+        font-weight: bold;
+        margin-left: 0rem;
+    }
+    .bgImagecontainer {
+        width: 50vw;
+        height: 80vh;
+        display: none;
+    }
+    /* whiteboard start */
+    .whiteboard {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 140vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .whiteboard .header {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dashboard {
+        margin-top: -60px;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .card {
+        width: 18rem;
+        height: 14rem;
+        margin-top: 60px;
+        border-radius: 20px;
+        background-color: rgb(128, 128, 128, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .card img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .card h2 {
+        margin-top: 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .card p {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card:hover {
+        background-color: rgb(128, 128, 128, 0.5);
+        transition: ease-in-out;
+        rotate: 10deg;
+        cursor: pointer;
+    }
+    /* middle backkground start */
+    .middlebackground {
+        margin-top: 40px;
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        background-color: rgba(63, 17, 17, 0.1);
+    }
+    .middlebackground .imgcontain {
+        width: 70%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .middlebackground img {
+        flex-shrink: 0;
+        margin-left: 50px;
+        width: 80%;
+        height: 60%;
+    }
+    .middlecontent {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .middlecontent h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .middlecontent p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .middlecontent button {
+        width: 180px;
+        background-color: transparent;
+        height: 40px;
+        border: 3px solid black;
+        border-radius: 10px;
+        color: black;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .middlecontent button:hover {
+        border: 3px solid green;
+        color: green;
+    }
+    /* clinetborad */
+    .clientboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 140vh;
+        background-color: white;
+    }
+    .headerclient {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+    }
+    .cardcontainer {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .cardcontainer .section1 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        height: 50%;
+    }
+    .section1 .clientcard .para1 {
+        background-color: gray;
+        padding: 10px;
+        width: 80%;
+        height: 80%;
+        text-align: left;
+        border-radius: 10px;
+        font-size: 12px;
+        margin-left: 30px;
+        align-self: stretch;
+        /* border-bottom-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+        /* border: 2px solid black; */
+    }
+    .paragraphborder {
+        width: 100%;
+    }
+    .cardcontainer .section1 .clientcard {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        /* border: 1px solid red;
+    background-color: green; */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    /* 
+.cardcontainer .section1 .clientcard::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: red;
+    transform: rotate(130deg);
+} */
+    .clientcard .profile {
+        margin-top: 0px;
+        width: 80%;
+        height: 20%;
+        display: flex;
+        margin-top: 10px;
+        flex-direction: row-reverse;
+        /* width: 70%; */
+        align-self: flex-end;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .profile p {
+        width: 80%;
+        text-align: left;
+    }
+    .profile h2 {
+        font-size: 20px;
+        margin-right: 20px;
+        width: 80%;
+        text-align: right;
+    }
+    .profile img {
+        width: 40px;
+        height: 40px;
+    }
+    .profile .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 70%;
+        height: 100%;
+    }
+    /* sec2 */
+    .cardcontainer .section2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    }
+    .section2 .clientcard .para1 {
+        padding: 10px;
+        width: 80%;
+        height: 80%;
+        text-align: left;
+        background-color: gray;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+    .cardcontainer .section2 .clientcard {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        /* border: 1px solid red;
+    background-color: green; */
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    /* card bootom tip */
+    /* .cardcontainer .section2 .sec1card::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: gray;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 85px;
+        transform: rotate(130deg);
+    }
+    .cardcontainer .section1 .sec1card2::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: gray;
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 140px;
+        transform: rotate(130deg);
+    }
+    .cardcontainer .section2 .sec1card2::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: gray;
+        position: absolute;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 140px;
+        transform: rotate(130deg);
+    }
+    .cardcontainer .section1 .sec1card::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: gray;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 85px;
+        transform: rotate(130deg);
+    } */
+    .experience {
+        text-align: center;
+        width: 100%;
+        height: 50%;
+    }
+    /* .excontent {
+        width: 100%;
+        height: 80%;
+        justify-content: flex-start;
+    } */
+    .excontent button {
+        align-self: center;
+    }
+    .skills {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .skillcontent {}
+    .skillcontent .title {
+        text-align: center;
+    }
+    .skilldashboard {
+        /* border: 1px solid red; */
+        flex-direction: column;
+    }
+    .experience .excontent {
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .skillsdata {
+        height: 60%;
+    }
+    .skillbar {
+        margin-top: 20px;
+    }
+    /* blogboard start */
+    .blogboard {
+        flex-direction: column;
+        width: 100%;
+        height: 200vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogheader {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogcardcontainer {
+        flex-direction: column;
+        display: flex;
+        width: 80%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .bcard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 90%;
+        margin-bottom: 60px;
+    }
+    .bimg {
+        background-image: url(../images/altumcode-dMUt0X3f59Q-unsplash.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+    }
+    .bcontent {
+        flex-direction: row;
+        width: 100%;
+        height: 50%;
+    }
+    .bcontent h1 {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .bcontent .date {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .date h4 {
+        font-weight: 500;
+        color: rgb(5, 141, 5);
+        margin-left: 10px;
+    }
+    .bcontent p {
+        text-align: center;
+        width: 100%;
+        font-size: .8rem;
+    }
+    .greenbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .greenbar p {
+        text-align: center;
+    }
+    /* .blogboard {
+        height: 130vh;
+    }
+    .blogcardcontainer {
+        width: 100%;
+        flex-direction: column;
+    }
+    .bcard {
+        display: flex;
+        width: 80%;
+        height: 80%;
+    }
+    .bcard .bimg {
+        width: 60%;
+    }
+    .bcontent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 100%;
+    } */
+}
+
+
+/* ************************tablet***************************** */
+
+@media only screen and (max-width:1236px) and (min-width:640px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        /* border: 2px solid red;*/
+    }
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.8;
+        /* background-color: rgba(0, 0, 0, 0.9);
+        
+        z-index: -1;*/
+    }
+    .navbar {
+        width: 100%;
+        height: 20vh;
+    }
+    .navleft {
+        height: 100%;
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navleft h1 {
+        color: white;
+    }
+    .navright {
+        height: 100%;
+        width: 50vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .navlist {
+        display: flex;
+        list-style: none;
+    }
+    .navlist li {
+        padding-left: 2vw;
+        text-transform: uppercase;
+        color: white;
+    }
+    .container {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+    }
+    .bgtextcontainer {
+        direction: flex;
+        width: 80vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .bgtextcontainer .title {
+        color: white;
+        font-size: 3em;
+        width: 80%;
+        padding-bottom: 3vh;
+    }
+    .bgtextcontainer p {
+        color: white;
+        font-size: 1em;
+        width: 80%;
+        padding-bottom: 4vh;
+    }
+    .bgtextcontainer button {
+        width: 180px;
+        height: 40px;
+        background-color: green;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        align-self: flex-start;
+        margin-right: 100px;
+        border: 3px solid white;
+        margin-left: 7rem;
+    }
+    .bgImagecontainer {
+        width: 50vw;
+        height: 80vh;
+        display: none;
+    }
+    /* whiteboard start */
+    .whiteboard {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .whiteboard .header {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .dashboard {
+        width: 80%;
+        height: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+    .card {
+        padding: 5px;
+        width: 10rem;
+        height: 14rem;
+        border-radius: 20px;
+        background-color: rgb(128, 128, 128, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .card h2 {
+        margin-top: 15px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .card p {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card:hover {
+        background-color: rgb(128, 128, 128, 0.5);
+        transition: ease-in-out;
+        rotate: 10deg;
+        cursor: pointer;
+    }
+    /* middle backkground start */
+    .middlebackground {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        height: 60vh;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        background-color: rgba(63, 17, 17, 0.1);
+    }
+    .middlebackground .imgcontain {
+        width: 40%;
+        height: 100%;
+    }
+    .middlebackground img {
+        flex-shrink: 0;
+        margin-top: 40px;
+        margin-left: -70px;
+        min-width: 90%;
+        min-height: 90%
+    }
+    .middlecontent {
+        flex-wrap: wrap;
+        width: 60%;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .middlecontent h1 {
+        margin-top: 20px;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .middlecontent p {
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .middlecontent button {
+        width: 180px;
+        background-color: transparent;
+        height: 40px;
+        border: 3px solid black;
+        border-radius: 10px;
+        color: black;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    .middlecontent span {
+        width: 50px;
+        height: 50px;
+    }
+    .middlecontent button:hover {
+        border: 3px solid green;
+        color: green;
+    }
+    /* whiteboard start */
+    .whiteboard {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .whiteboard .header {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dashboard {
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .dashboard .card {
+        width: 10rem;
+        height: 14rem;
+        border-radius: 20px;
+        background-color: rgb(128, 128, 128, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .card h2 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    .card p {
+        padding: 10px;
+        margin-top: 5px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card:hover {
+        background-color: rgb(128, 128, 128, 0.5);
+        transition: ease-in-out;
+        rotate: 10deg;
+        cursor: pointer;
+    }
+    /* 
+.middlebackground {
+    width: 100%;
+    height: 80vh;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    display: block;
+} */
+    /* middle backkground start */
+    .middlebackground {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        height: 60vh;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        background-color: rgba(63, 17, 17, 0.1);
+    }
+    .middlebackground .imgcontain {
+        width: 40%;
+        height: 100%;
+    }
+    .middlebackground img {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%
+    }
+    .middlecontent {
+        flex-wrap: wrap;
+        width: 40%;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .middlecontent h1 {
+        margin-top: 20px;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .middlecontent p {
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .middlecontent button {
+        width: 180px;
+        background-color: transparent;
+        height: 40px;
+        border: 3px solid black;
+        border-radius: 10px;
+        color: black;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    .middlecontent button:hover {
+        border: 3px solid green;
+        color: green;
+    }
+    .middlecontent span {
+        display: none;
+    }
+    /* clinetborad */
+    .clientboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        background-color: white;
+    }
+    .headerclient {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+    }
+    .cardcontainer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cardcontainer .section1 {
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+    }
+    .section1 .clientcard .para1 {
+        background-color: var(--card-color);
+        padding: 10px;
+        width: 80%;
+        text-align: left;
+        border-radius: 10px;
+        margin-bottom: 0px;
+        /* border-bottom-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+        /* border: 2px solid black; */
+    }
+    .paragraphborder {
+        width: 100%;
+    }
+    .cardcontainer .section1 .clientcard {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        /* background-color: green;  */
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* 
+.cardcontainer .section1 .clientcard::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: red;
+    transform: rotate(130deg);
+} */
+    .clientcard .profile {
+        margin-top: 0px;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80%;
+        justify-content: flex-end;
+        /* align-self: flex-end;
+        align-items: flex-end;
+        justify-content: flex-end; */
+    }
+    .profile p {
+        width: 80%;
+        text-align: right;
+        margin-right: 2%;
+    }
+    .profile h2 {
+        font-size: 20px;
+        margin-right: 20px;
+        width: 80%;
+        text-align: right;
+    }
+    .profile img {
+        width: 40px;
+        height: 40px;
+    }
+    .profile .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 70%;
+        height: 100%;
+    }
+    /* sec2 */
+    .cardcontainer .section2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+    }
+    .section2 .clientcard .para1 {
+        padding: 10px;
+        width: 80%;
+        text-align: left;
+        background-color: var(--card-color);
+        border-radius: 10px;
+        margin-bottom: 0px;
+    }
+    .cardcontainer .section2 .clientcard {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        /* border: 1px solid red;
+    background-color: green; */
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* card bootom tip */
+    /*  
+    .cardcontainer .section2 .sec1card::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: var(--card-color);
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 60px;
+        transform: rotate(130deg);
+    }
+    .cardcontainer .section1 .sec1card2::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: var(--card-color);
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 170px;
+        transform: rotate(130deg);
+    }
+    .cardcontainer .section2 .sec1card2::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: var(--card-color);
+        position: absolute;
+        margin-top: 1.4%;
+        margin-left: 10%;
+        transform: rotate(130deg);
+    }
+    .cardcontainer .section1 .sec1card::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: var(--card-color);
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 60px;
+        transform: rotate(130deg);
+    } */
+}
